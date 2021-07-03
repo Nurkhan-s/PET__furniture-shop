@@ -1,0 +1,108 @@
+*,
+*::before,
+*::after{
+    box-sizing: border-box;
+    margin:0;
+    padding:0;
+}
+
+html {
+    overflow-x: hidden;
+    margin-right: calc(-1 * (100vw - 100%));
+}
+
+body{
+    font-family: "Open Sans", sans-serif;
+}
+
+ul,
+li{
+    list-style: none;
+    text-decoration: none;
+}
+
+a{
+    text-decoration: none;
+}
+
+.flex{
+    display: flex;
+}
+
+.container{
+    max-width: 1180px;
+    width: 100%;
+    padding: 0 20px;
+    margin:0 auto;
+ }
+
+ .title{
+    color: #333333;
+    line-height: 41px;
+    font-weight: 600;
+    font-size: 30px;
+    margin: 0 0 20px;
+ }
+
+ .breadcrumb{
+     margin-bottom: 15px;
+ }
+
+ .apexcharts-tooltip-marker{
+     border-radius: 0 !important;
+ }
+
+ .radiobtn-group{
+    padding-top: 16px;
+
+    &:not(:last-child){
+      padding-bottom: 16px;
+      border-bottom: 1px solid #C4C4C4;
+    }
+
+    &__title{
+      font-style: normal;
+      font-weight: 500;
+      font-size: 14px;
+      line-height: 16px;
+      color: #71757A;
+      margin-bottom: 16px;
+    }
+
+    &__more{
+
+      button{
+        outline: none;
+        background: transparent;
+        border: 0;
+        font-size: 12px;
+        line-height: 16px;
+        text-decoration-line: underline;
+        color: #71757A;
+        cursor: pointer;
+      }
+    }
+
+    &__item{
+       margin-bottom: 16px;
+    }
+  }
+
+  .trustworthness-detail-date{
+    display: flex;
+    align-items: center;
+
+    &__text{
+        font-size: 14px;
+        line-height: 20px;
+        color: #9da3ac;
+        margin-left: 10px;
+    }
+}
+.layout_padding {
+  padding-bottom: 200px ;
+}
+.disable {
+  pointer-events: none;
+  opacity: 0.4;
+}
