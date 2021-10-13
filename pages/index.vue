@@ -1,3 +1,7 @@
-<template>
-  <div>hi</div>
-</template>
+<script>
+export default {
+  middleware({ store, redirect }) {
+    return redirect("/main");
+  }
+}
+</script>
